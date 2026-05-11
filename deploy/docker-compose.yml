@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: dw_pix
+    restart: always
+    environment:
+      POSTGRES_USER: usuario_eng
+      POSTGRES_PASSWORD: senha_forte
+      POSTGRES_DB: dw_pix
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  grafana:
+    image: grafana/grafana-oss:latest
+    container_name: grafana_pix
+    restart: always
+    ports:
+      - "3002:3000" # Acessaremos via porta 3002
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin # Senha inicial
+    depends_on:
+      - postgres
+
+volumes:
+  postgres_data:
