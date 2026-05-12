@@ -9,13 +9,5 @@ GRÁFICO SIMPLES GERADO COM GRAFANA
 gráfico sobre o número de participantes do SPI(Sistema de pagamentos instâtaneos)
 
 ESTRUTURA DAS PASTAS
-eng_dados/
-├── scripts/               # Códigos Python
-│   ├── coleta.py          # Script de Extração (API -> CSV)
-│   └── carga.py           # Script de Carga (CSV -> Postgres)
-├── deploy/                # Arquivos de infraestrutura
-│   └── docker-compose.yml # Configuração do Postgres e Grafana
-├── data/                  # (Opcional) Apenas para exemplos pequenos
-│   └── .gitkeep           # Evita subir CSVs gigantes, mas mantém a pasta
-├── README.md              # Documentação do projeto
-└── .gitignore             # Arquivos que o Git deve ignorar (venv, pycache)
+<img width="651" height="199" alt="estrutuda" src="https://github.com/user-attachments/assets/582f1587-4c42-4200-8727-ad946f3899f3" />
+
