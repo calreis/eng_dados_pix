@@ -1,7 +1,6 @@
 
 <h1>PIPELINE DE DADOS EXTRAIDOS DA API BRASILAPI SOBRE O NÚMERO DE BANCOS PARTICIPANTES DO PIX E SUAS TRANSAÇÕES</h>
-
-OBS: 
+ 
 Os dados são obtidos diretamente do Banco Central do Brasil.
 Em novembro de 2025 o banco central deixou de fornecer a data de início de operação dos participantes, por isso este campo pode estar vazio para alguns participantes.
 
