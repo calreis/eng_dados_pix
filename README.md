@@ -41,7 +41,7 @@
 
 <img width="509" height="85" alt="image" src="https://github.com/user-attachments/assets/39816eeb-d4c7-4b99-a39c-faaf744a57fa" />
 
-📊 Visualização e AnáliseOs dados carregados na tabela fato_participantes_pix ficam disponíveis para consultas SQL personalizadas na pasta data/.Você pode conectar o seu painel do Grafana (disponibilizado via Docker) ao banco Postgres para criar gráficos sobre a evolução e adesão das instituições ao PIX ao longo do tempo.
+📊 Visualização e Análise dos dados carregados na tabela fato_participantes_pix ficam disponíveis para consultas SQL personalizadas na pasta data/.Você pode conectar o seu painel do Grafana (disponibilizado via Docker) ao banco Postgres para criar gráficos sobre a evolução e adesão das instituições ao PIX ao longo do tempo.
 
 <img width="1920" height="1080" alt="grafico_grafana" src="https://github.com/user-attachments/assets/93411822-d6b4-4da4-9a6f-19eb23f27c43" />
 <p>gráfico sobre o número de participantes do SPI(Sistema de pagamentos instâtaneos)</p>
