@@ -3,7 +3,7 @@
   
 </p>Este projeto é um pipeline de dados automatizado que extrai, transforma e carrega (ETL) informações públicas sobre as instituições participantes do PIX, utilizando a API pública do BrasilAPI.</p>
 
-<h2>🛠️ Estrutura do ProjetoO repositório está organizado da seguinte forma:scripts/:</h2>
+<h2>🛠️ Estrutura do Projeto: O repositório está organizado da seguinte forma:scripts/:</h2>
 
 <p>O repositório está organizado da seguinte forma:scripts/: Automações em Python para o processo de ETL.deploy/: Infraestrutura via Docker para o banco de dados Postgres e painéis no Grafana.sql/: Camada de transformação de dados contendo as Views e Queries analíticas.data/: Armazenamento temporário dos arquivos brutos extraídos (CSV).README.md: Documentação oficial do projeto.</p>
 
