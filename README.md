@@ -54,3 +54,6 @@ Navegue até a pasta deploy e inicie os containers:
 ```bash
 cd deploy/
 docker-compose up -d
+
+
+### Passo 1: Subir a Infraestrutura
