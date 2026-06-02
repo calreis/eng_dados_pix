@@ -10,3 +10,10 @@ Este projeto é um pipeline de dados automatizado que extrai, transforma e carre
 - Dashboard no Grafana para consulta e filtros por data e tipo de instituição
 
 ## 🛠️ Estrutura do Projeto
+
+eng_dados_pix/
+├── scripts/ # Automações Python para ETL
+├── deploy/ # Docker + Docker Compose (Postgres + Grafana)
+├── sql/ # Views e queries analíticas
+├── data/ # Dados brutos extraídos (CSV temporário)
+└── README.md # Documentação
