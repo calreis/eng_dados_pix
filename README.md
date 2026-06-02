@@ -12,17 +12,11 @@ Este projeto é um pipeline de dados automatizado que extrai, transforma e carre
 ## 🛠️ Estrutura do Projeto
 
 eng_dados_pix/
-
-├── scripts/ # Automações Python para ETL
-
-├── deploy/ # Docker + Docker Compose (Postgres + Grafana)
-
-├── sql/ # Views e queries analíticas
-
-├── data/ # Dados brutos extraídos (CSV temporário)
-
-└── README.md # Documentação
-
+├── scripts/          # Automações Python para ETL
+├── deploy/           # Docker + Docker Compose (Postgres + Grafana)
+├── sql/              # Views e queries analíticas
+├── data/             # Dados brutos extraídos (CSV temporário)
+└── README.md         # Documentação
 
 ## 🏗️ Como Funciona o Pipeline (ETL)
 
@@ -51,9 +45,51 @@ eng_dados_pix/
 
 Navegue até a pasta deploy e inicie os containers:
 
-```bash
 cd deploy/
 docker-compose up -d
 
+### Passo 2: Instalar Dependências Python
 
-### Passo 1: Subir a Infraestrutura
+pip install -r requirements.txt
+
+### Passo 3: Executar a Extração de Dados
+
+python scripts/coleta.py
+
+### Passo 4: Executar a Carga no Banco
+
+python scripts/carga.py
+
+## 📈 Visualização e Análise
+
+Os dados carregados na tabela fato_participantes_pix podem ser consultados via SQL ou conectados ao Grafana (disponível via Docker) para criar dashboards interativos.
+
+Exemplo de query:
+
+SELECT 
+    data_carga,
+    COUNT(*) as total_participantes
+FROM fato_participantes_pix
+GROUP BY data_carga
+ORDER BY data_carga DESC;
+
+### Dashboard no Grafana
+
+Gráfico mostrando evolução do número de participantes do SPI (Sistema de Pagamentos Instantâneos)
+
+## 🧠 Tecnologias utilizadas
+
+- Python (Pandas, requests)
+- PostgreSQL
+- Docker & Docker Compose
+- Grafana
+- BrasilAPI
+
+## 📬 Contato
+
+Claudemir dos Reis – LinkedIn: linkedin.com/in/claudemir-dos-reis-da-silva-2577152b8
+GitHub: github.com/calreis
+
+---
+
+⭐ Se este projeto te ajudou, deixe uma estrela no repositório!
