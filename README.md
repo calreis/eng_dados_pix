@@ -81,6 +81,7 @@ ORDER BY data_carga DESC;
 ### Dashboard no Grafana
 
 Gráfico mostrando evolução do número de participantes do SPI (Sistema de Pagamentos Instantâneos)
+![Gráfico PIX](grafana.png)
 
 ## 🧠 Tecnologias utilizadas
 
